@@ -1,20 +1,27 @@
+import blind_75.array.Solution;
+
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        /*Solution sol = new Solution();
         System.out.println(sol.sumOfUnique(new int[]{1,2,3,2}));
         System.out.println(sol.prefixCount(new String[]{"pay","attention","practice","attend"}, "at"));
         System.out.println(sol.prefixCount(new String[]{"leetcode","win","loops","success"}, "code"));
         System.out.println(Arrays.toString(sol.findArray(new int[]{5, 2, 0, 3, 1})));
-        System.out.println(Arrays.toString(sol.findIntersectionValues(new int[]{4, 3, 2, 3, 1}, new int[]{2, 2, 5, 2, 3, 6})));
+        System.out.println(Arrays.toString(sol.findIntersectionValues(new int[]{4, 3, 2, 3, 1}, new int[]{2, 2, 5, 2, 3, 6})));*/
+
+        Solution sol75 = new Solution();
+        System.out.println(Arrays.toString(sol75.twoSum(new int[]{0,4,3,0}, 0)));
+        System.out.println(sol75.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));
+
 
     }
 }
 
 
-class Solution {
+/*class Solution {
     //1207
     public int sumOfUnique(int[] nums) {
         Set<Integer> uniques = new HashSet<>();
@@ -87,4 +94,5 @@ class Solution {
     }
 
 
-}
+
+}*/
